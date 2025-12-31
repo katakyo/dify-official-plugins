@@ -1,8 +1,7 @@
-# https://platform.openai.com/docs/models/gpt-5.2
-model: gpt-5.2
+model: gpt-5.1-chat-latest
 label:
-  zh_Hans: gpt-5.2
-  en_US: gpt-5.2
+  zh_Hans: gpt-5.1-chat-latest
+  en_US: gpt-5.1-chat-latest
 model_type: llm
 features:
   - multi-tool-call
@@ -38,8 +37,8 @@ parameter_rules:
       en_US: Reasoning Effort
     type: string
     help:
-      zh_Hans: 约束推理模型的推理努力程度。支持的值包括none、low、medium和high。降低推理努力可以获得更快的响应和更少的推理token使用。GPT-5.2 中默认值为 none。
-      en_US: Constrains effort on reasoning for reasoning models. Currently supported values are none, low, medium, and high. Reducing reasoning effort can result in faster responses and fewer tokens used on reasoning in a response. The default for GPT-5.2 is none.
+      zh_Hans: 约束推理模型的推理努力程度。支持的值包括none、low、medium和high。降低推理努力可以获得更快的响应和更少的推理token使用。GPT-5.1 中默认值为 none。
+      en_US: Constrains effort on reasoning for reasoning models. Currently supported values are none, low, medium, and high. Reducing reasoning effort can result in faster responses and fewer tokens used on reasoning in a response. The default for GPT-5.1 is none.
     required: false
     default: none
     options:
@@ -72,7 +71,7 @@ parameter_rules:
     required: true
     default: true
 pricing:
-  input: '1.75'
-  output: '14.00'
+  input: '1.25'
+  output: '10.00'
   unit: '0.000001'
   currency: USD
